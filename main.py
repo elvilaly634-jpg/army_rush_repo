@@ -15,6 +15,10 @@ player_rects=[]
 player_surfaces.append(pygame.surface.Surface((25,25)))
 player_rects.append(player_surfaces[0].get_rect(center=(SCREEN_WIDTH/2,3*SCREEN_HEIGHT/4+50)))
 player_surfaces[0].fill("blue")
+
+player_surfaces.append(pygame.surface.Surface((25,25)))
+player_rects.append(player_surfaces[1].get_rect(center=(player_rects[0].centerx+player_size*2,player_rects[0].centery)))
+player_surfaces[0].fill("blue")
 directionx=0
 speed=5
 
